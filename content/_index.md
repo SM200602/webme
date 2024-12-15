@@ -7,6 +7,14 @@ type: landing
 design:
   # Default section spacing
   spacing: "6rem"
+  background:
+    # Choose colors such as from https://html-color-codes.info
+    gradient_start: "#4bb4e3"
+    gradient_end: "#2b94c3"
+    # The gradient angle from 0-360 degrees
+    gradient_angle: 180
+    # Text color (true=light, false=dark, or remove for the dynamic theme color).
+    text_color_light: true
 
 sections:
   - block: resume-biography-3
@@ -64,6 +72,33 @@ sections:
         exclude_featured: false
     design:
       view: citation
+
+  - block: experience
+    id: experience
+    content:
+      title: Research Experience
+      username: admin
+    design:
+      # Hugo date format
+      date_format: "January 2006"
+      # Education or Experience section first?
+      is_education_first: false
+
+  # - block: resume-skills
+  #   content:
+  #     title: Skills & Hobbies
+  #     username: admin
+  #   design:
+  #     show_skill_percentage: false
+  # - block: resume-awards
+  #   content:
+  #     title: Awards
+  #     username: admin
+  # - block: resume-languages
+  #   content:
+  #     title: Languages
+  #     username: admin
+
   # - block: collection
   #   id: talks
   #   content:
